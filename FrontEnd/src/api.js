@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create an Axios instance with the base URL for the API
 const api = axios.create({
-  baseURL: URL || 'http://localhost:8080/api',
+  baseURL: process.env.REACT_APP_URL || 'http://localhost:8080/api',
 });
 
 // Function to set the JWT token in the Axios headers
